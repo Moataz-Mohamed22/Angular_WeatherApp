@@ -1,59 +1,103 @@
-# WeatherApp
+# 🌤️ Angular Weather App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.7.
+A simple Weather Application built with **Angular** and **Bootstrap 5** to practice core Angular concepts and build an interactive user experience.
 
-## Development server
+## 🚀 Features
 
-To start a local development server, run:
+- **Weather Dashboard:** Display the current temperature.
+- **Temperature Conversion:** Convert temperatures between Fahrenheit and Celsius using a custom Angular Pipe.
+- **Toggle Temperature Unit:** Switch between Celsius and Fahrenheit.
+- **Dynamic Background Colors:** Change the weather card background based on temperature using a custom directive.
+- **Weather List:** Display a list of cities and their temperatures.
+- **Filtering:** Search for cities by name.
+- **Sorting:** Sort cities by temperature or alphabetically by city name.
+- **Angular Routing:** Navigate between Weather and Weather List pages.
+- **Query Parameters:** Pass temperature values between routes using Angular Router.
+
+## 🛠️ Technologies Used
+
+- Angular
+- TypeScript
+- HTML5
+- CSS3
+- Bootstrap 5
+- Angular Router
+- Angular Pipes
+- Angular Directives
+- Angular Forms
+
+## 📚 Angular Concepts Practiced
+
+| Concept | Implementation |
+|---|---|
+| Components | WeatherComponent, WeatherListComponent |
+| Custom Pipes | TemperatureConversionPipe |
+| Custom Directives | BackgroundColorDirective |
+| Routing | Navigate between application pages |
+| Query Parameters | Pass temperature through URL |
+| Two-Way Binding | `[(ngModel)]` |
+| Event Binding | `(click)` |
+| Property Binding | `[appBackgroundColor]` |
+| Control Flow | `@for` |
+| Array Methods | `filter()`, `sort()` |
+| Lifecycle Hooks | `ngOnInit()` |
+
+## 📂 Project Structure
+
+```text
+src/
+└── app/
+    ├── Components/
+    │   ├── weather/
+    │   │   ├── weather.component.ts
+    │   │   ├── weather.component.html
+    │   │   └── weather.component.css
+    │   └── weather-list/
+    │       ├── weather-list.component.ts
+    │       ├── weather-list.component.html
+    │       └── weather-list.component.css
+    ├── Directives/
+    │   └── background-color.directive.ts
+    └── pipes/
+        └── temperature-conversion-pipe.ts
+```
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd weather-app
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Run the development server:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+5. Open your browser:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🎯 Project Goal
 
-```bash
-ng generate --help
-```
+The main goal of this project is to practice Angular fundamentals, understand component interaction, work with routing and query parameters, and build reusable custom pipes and directives.
 
-## Building
+---
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Developed as part of my Angular learning journey.**
